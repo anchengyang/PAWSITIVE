@@ -19,16 +19,42 @@
 
 /* General Style */
 body {
-
+	background-image: url('Pawsitive.gif');
 }
 
 /* Simple Button styles*/
+.button {
+	border-radius: 30px;
+	background-color: #ffd1dc;
+	color:black;
+	font-family: "Times New Roman";
+	font-weight: bold;
+
+}
 button {
+	border-radius: 30px;
+	background-color: #ffd1dc;
+	color:black;
+	font-family: "Times New Roman";
+	font-weight: bold;
 
 }
 
 /* Simple Button Style on Hover */
+.button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: wheat;
+	color: black;
+	font-family: "Times New Roman";
+	font-weight: bold;
+
+}
 button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: wheat;
+	color: black;
+	font-family: "Times New Roman";
+	font-weight: bold;
 
 }
 
@@ -50,7 +76,8 @@ button:hover {
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
-
+	/* margin-bottom: 960px; */
+	margin-right: 550px;
 }
 
 /**
