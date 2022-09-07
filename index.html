@@ -1,124 +1,263 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--Change the lang property to your web"s language-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/styles/style.css" />
+    <title>Pawsitive</title>
+</head>
 
-	<head prefix="og: http://ogp.me/ns#">
-
-		<title>Pawsitive</title> <!--Up to 60-70 Characters. Optimal Format: Primary Keyword - Secondary Keyword | Brand Name-->
-
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval'">
-		<meta name="description" content=""> <!--Page description. No longer than 155 characters.-->
-		<meta name="keywords" content="">
-		<meta name="author" content=""> <!--Name of the author.-->
-
-		<!--Facebook Meta Tags-->
-		<meta property="og:image" content="http://" /> <!--URL of Image to show-->
-		<meta property="og:description" content="" /> <!--Page Description-->
-		<meta property="og:site_name" content="" /> <!--The Name Here-->
-		<meta property="og:url" content="http://" /> <!--The Web main URL-->
-		<meta property="og:title" content="" /> <!--The Title Here-->
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
+        <div class="container">
+            <img class="img-fluid d-none d-sm-block smalllogo" src="static/images/logo.png" width="100" height="100" class="img-fluid"
+                        alt="" />
+            <a href="#" class="navbar-brand">Pawsitive</a>
 
 		<!--Google Meta Tags-->
 		<meta itemprop="name" content=""> <!--The Name or Title Here-->
 		<meta itemprop="description" content=""> <!--Page Description-->
 		<meta itemprop="image" content="http://"> <!--URL of Image to show-->
 
-		<!--Twitter Meta Tags - You"ll have to validate your website here: https://dev.twitter.com/docs/cards/validation/validator-->
-		<meta name="twitter:card" content="summary_large_image"> <!--Content Card Type-->
-		<meta name="twitter:domain" content=""> <!--Your web"s domain-->
-		<meta name="twitter:site" content="@"> <!--@publisher-->
-		<meta name="twitter:title" content=""> <!--Page Title-->
-		<meta name="twitter:description" content=""> <!--Page description less than 200 characters-->
-		<meta name="twitter:creator" content="@"> <!--@author-->
-		<meta name="twitter:image:src" content="http://"> <!--URL of Image to show-->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#game" class="nav-link">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<!--Android Meta Tags-->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="assets/icons/icon_192x192.png"> <!--192 x 192 Icon-->
-		<link rel="icon" sizes="128x128" href="assets/icons/icon_128x128.png"> <!--128 x 128 Icon-->
+    <!-- Showcase -->
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1><span class="text-danger">Psychological first aid (PFA)</span></h1>
+                    <p class="lead my-4">
+                        PFA is a crisis response intervention technique that facilitates recovery and reduces
+                        trauma-related stress after a crisis hits. Learn more on PFA and how you can be better prepared
+                        to aid your family and friends when a crisis hits.
+                    </p>
+                    <a href="index2.html">
+                        <button class="btn btn-danger btn-lg">
+                            Play our game!
+                        </button>
+                    </a>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="static/images/pfa.png" alt="" />
+            </div>
+        </div>
+    </section>
 
-		<!--Apple Meta Tags-->
-		<meta name="apple-mobile-web-app-title" content=""> <!--App Title or Name-->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!--Styling for the iOS Status Bar-->
-		<link rel="apple-touch-icon" href="assets/icons/icon_60x60.png"> <!--60 x 60 Icon-->
-		<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/icon_76x76.png"> <!--76 x 76 Icon-->
-		<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/icon_120x120.png"> <!--120 x 120 Icon-->
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_152x152.png"> <!--152 x 152 Icon-->
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_167x167.png"> <!--167 x 167 Icon-->
-		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_180x180.png"> <!--180 x 180 Icon-->
+    <!-- Learn Sections -->
+    <section id="about" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid p-3 d-none d-sm-block" src="static/images/help.jpeg" class="img-fluid"
+                        alt="" />
+                    <br>
+                    <br>
+                    <img class="img-fluid p-3 d-none d-sm-block" src="static/images/help2.jpeg" class="img-fluid"
+                        alt="" />
+                </div>
+                <div class="col-md p-5">
+                    <h2>What is it</h2>
+                    <p class="lead">
+                        Overview of PFA
+                    </p>
+                    <p>
+                        Through PFA, you learn to understand that the emotions we feel during a crisis are normal. You
+                        also learn how to help others by following these action principles:
+                    <ul>
+                        <li>Prepare</li>
+                        <li>Look</li>
+                        <li>Listen</li>
+                        <li>Link</li>
+                    </ul>
+                    </p>
+                    <h2>Where can we apply it</h2>
+                    <p class="lead">
+                        PFA can be used anywhere
+                    </p>
+                    <p>
+                        You can use PFA at your school, at home, or at work. Learn what you can do if you see your
+                        friend or
+                        family member:
+                    <ul>
+                        <li>Crying</li>
+                        <li>Shouting or being violent</li>
+                    </ul>
+                    </p>
+                    <h2>What not to say</h2>
+                    <p class="lead">
+                        Avoid using phrases that people can misunderstand
+                    </p>
+                    <p>
+                        These commonly used phrases may not help someone who is suffering:
+                    <ul>
+                        <li>Don’t cry</li>
+                        <li>I understand</li>
+                        <li>Cheer up</li>
+                        <li>Think of the positive side</li>
+                        <li>Calm down</li>
+                        <li>It’s okay</li>
+                        <li>It’s not that bad</li>
+                        <li>You must get a hold of yourself</li>
+                    </ul>
+                    </p>
+                    <a href="#faq" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!--Microsoft Tags-->
-		<meta name="msapplication-TileColor" content=""> <!--Color of the tile on Windows. In hexadecimal format-->
-		<meta name="application-name" content="" /> <!-- App Title -->
-		<meta name="msapplication-tooltip" content="" /> <!--Small text on hover-->
-		<meta name="msapplication-starturl" content="http://" /> <!-- URL to start in -->
-		<meta name="msapplication-square70x70logo" content="assets/icons/icon_70x70.png" /> <!--Image for Tile 70x70-->
-		<meta name="msapplication-square150x150logo" content="assets/icons/icon_150x150.png" /> <!--Image for Tile 150x150-->
-		<meta name="msapplication-wide310x150logo" content="assets/icons/icon_310x150.png" /> <!--Image for Tile 310x150-->
-		<meta name="msapplication-square310x310logo" content="assets/icons/icon_310x310.png" /> <!--Image for Tile 310x310-->
+    <section id="game" class="bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn through our game!</h2>
+                    <p class="lead">
+                        Learn how to be a better listener
+                    </p>
+                    <p>
+                        The main character just enrolled into Pawsitive, a school for animals.
+He is greeted by Principal Brown and is introduced to a useful guide to free mental health services.
+As he encounters new friends, he learns to communicate better and helps them resolve their issues
+                    </p>
+                    <a href="https://anchengyang.github.io/PAWSITIVE/">
+                        <button class="btn btn-danger btn-lg">
+                            Play our game!
+                        </button>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="static/images/logo.png" width="1000" height="1000" class="img-fluid d-none d-sm-block biglogo" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!--<link rel="publisher" href=""> Publisher"s Google+ URL-->
+    <!-- Question Accordion -->
+    <section id="faq" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            What should I do if the person suffering does not have anybody to call or rejects external
+                            help?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            You can try other support systems:
+                            <ul>
+                                <li>Within the organisation, it can be:
+                                    <ul>
+                                        <li>Speaking to someone from HR or with their boss</li>
+                                        <li>In-house counsellors or psychologists</li>
+                                    </ul>
+                                </li>
+                                <li>Externally, it can be:
+                                    <ul>
+                                        <li>Family doctor</li>
+                                        <li>Neighbour</li>
+                                        <li>Social worker</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            When the person refuses any help, you can provide them with help hotlines so that they could
+                            call in their own time.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            Can someone with mild mental problems like depression be trained as a PFA provider?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Yes, anyone can be trained in PFA.
+                            <br>
+                            <br>
+                            You have to be capable of taking care of yourself before you can be deployed to help others.
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-		<meta name="theme-color" content=""><!--Theme color for browsers in hexadecimal format.-->
+    <!-- More Links-->
+    <section id="more" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">More on PFA</h2>
+            <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                    <a href="https://www.mom.gov.sg/employment-practices/sgsecure/resources/psychological-first-aid">
+                        Ministry of Manpower
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.firstaidtraining.com.sg/psychological-first-aid-course">
+                        SgFirstAid
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.redcross.sg/get-trained/psychological-first-aid.html">
+                        Singapore Red Cross
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://sera.sg/e/psychological-first-aid/">
+                        SERA, Singapore
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-		<link rel="shortcut icon" href="favicon.ico" /> <!--Favicon. Good tool for creating one: http://xiconeditor.com/ Create all sizes.-->
-		<!--<link rel="canonical" href=""> Canonical URL of your webpage-->
+    <!-- Footer -->
+    <footer class="p-5 bg-white text-dark text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2022 Pawsitive</p>
 
-		<link rel="manifest" href="manifest.json">
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
 
-		<!-- Third Party CSS Libraries -->
-
-		<!-- Monogatari CSS Libraries -->
-		<link rel="stylesheet" href="./engine/core/monogatari.css">
-		<link rel="stylesheet" href="./style/main.css">
-
-		<!-- Third Party JavaScript Libraries -->
-
-		<!-- Monogatari JavaScript Libraries -->
-		<script src="./engine/debug/debug.js"></script>
-		<script src="./engine/core/monogatari.js"></script>
-		<script src="./js/options.js"></script>
-		<script src="./js/storage.js"></script>
-		<script src="./js/script.js"></script>
-		<script src="./js/story.js"></script>
-		<script src="./js/story_dog.js"></script>
-		<script src="./js/main.js"></script>
-
-	</head>
-
-	<body>
-
-		<!-- Fallback when JavaScript is not available -->
-		<noscript>
-			<div class="middle text--center">
-				<h2>JavaScript Disabled or not Supported.</h2>
-				<small>To play this game, please enable JavaScript executing or use a different browser.</small>
-			</div>
-		</noscript>
-
-		<div id="monogatari">
-			<visual-novel>
-				<language-selection-screen></language-selection-screen>
-				<loading-screen></loading-screen>
-				<main-screen>
-					<main-menu></main-menu>
-				</main-screen>
-				<game-screen>
-					<dialog-log></dialog-log>
-					<text-box></text-box>
-					<quick-menu></quick-menu>
-				</game-screen>
-				<gallery-screen></gallery-screen>
-				<credits-screen></credits-screen>
-				<load-screen></load-screen>
-				<save-screen></save-screen>
-				<settings-screen></settings-screen>
-				<help-screen></help-screen>
-			</visual-novel>
-		</div>
-	</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>

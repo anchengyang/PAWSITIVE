@@ -1,0 +1,15 @@
+section::before {
+    display: block;
+    content: '';
+    height: 55px;
+}
+.biglogo{
+    object-fit: cover;
+    margin-top: -150px;
+    margin-bottom: -50px;
+}
+.smalllogo{
+    object-fit: cover;
+    margin-top: -60px;
+    margin-bottom: -50px;
+}
