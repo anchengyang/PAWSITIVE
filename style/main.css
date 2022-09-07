@@ -77,7 +77,14 @@ button:hover {
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
 	/* margin-bottom: 960px; */
-	margin-right: 550px;
+
+}
+main-menu.animated {
+	width: 100%;
+	display: block;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 0 100px;
 }
 
 /**

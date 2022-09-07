@@ -65,7 +65,8 @@ monogatari.assets ('videos', {
 // Define the images used in the game.
 monogatari.assets ('images', {
 	'4steps': '4steps.png',
-	'guide': 'guide.png'
+	'guide': 'guide.png',
+	'ear': 'ear.png',
 });
 
 // Define the backgrounds for each scene.
