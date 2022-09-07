@@ -11,7 +11,7 @@ monogatari.script ({
     'Choice': {
       'Approach': {
         'Text': 'Is everything okay?',
-        'Do': 'jump ',
+        'Do': 'jump Approach',
         'Class': 'button'
       },
       'NotApproach': {
@@ -70,7 +70,7 @@ monogatari.script ({
   'Advice': [
     'show image ear with fadeIn',
     'mc Here are some helpful avenues if you are lonely and need a listening ear',
-    'mc If you need help, Principal Brown might be able to give some support both financially.',
+    'mc If you need help, Principal Brown might be able to give some support both financially and emotionally.',
     'mc Come, lets go and find Principal Brown together!',
     'end'
   ],
@@ -83,6 +83,7 @@ monogatari.script ({
   'BadCheer':[
     'y Thats not very helpful',
     'y In stressful situations crying is a normal response',
+    'jump cCheerUp'
   ],
   'NotApproach': [
     'y You shouldn\'t leave a friend in need alone!',

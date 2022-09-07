@@ -119,6 +119,7 @@ monogatari.script ({
 		'y Well done! You have successfully provided psychological first aid to the first person you met in Pawsitive!',
 		'show image 4steps with fadeIn',
 		'y From this, we have learnt to practice prepare, look, listen and link.',
+		'jump DogIntro'
 		
 	],
   //bad choices loop back here
