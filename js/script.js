@@ -99,7 +99,7 @@ monogatari.characters ({
 		name: 'Kitty',
 		color:'#FF8C00',
 		sprites: {
-			sadcat: 'sadcat.png',
+			sadcat: 'sadcat2.png',
 			happycat: 'happycat.png'
 		}
 	}
@@ -138,10 +138,10 @@ monogatari.script ({
 		'y Hi {{player.name}}! Welcome to Pawsitive, a school for animals!', 
 		'y We hope you are excited to meet new people and make new friends.',
 		'show image guide with fadeIn',
-		'y Before we meet your other classmates, lets take a look at some useful tips',
+		'y Before we meet your other classmates, lets take a look at some useful information!',
 		
 		'show scene scene5 with fadeIn',
-		'show character mc hamster at center with fadeIn',
+		'show character mc hamster at left with fadeIn',
 		'y This will be your classroom. Meet your new classmate, Kitty the cat!',
 		'show character k sadcat at right with fadeIn',
 		'jump cHiBye'
