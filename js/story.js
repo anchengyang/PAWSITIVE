@@ -121,6 +121,8 @@ monogatari.script ({
 		'hide character mc hamster at left with fadeOut',
 		'show image 4steps with fadeIn',
 		'y From this, we have learnt to practice prepare, look, listen and link.',
+		'y Oh, do I hear someone crying in the hallway?',
+		'y That sounds like Russel.',
 		'jump DogIntro'
 		
 	],
