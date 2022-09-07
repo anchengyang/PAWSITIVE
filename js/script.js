@@ -141,10 +141,12 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'show character mc hamster at left with fadeIn',
+		
 		'show character y elephant at right with fadeIn',
 		'y Hi {{player.name}}! Welcome to Pawsitive, a school for animals!', 
-		'y We hope you are excited to meet new people and make new friends.',
+		'show character mc hamster at left with fadeIn',
+		'mc Hi Principal Brown, nice to meet you!',
+		'y I hope you are excited to meet new people and make new friends.',
 		'show image guide with fadeIn',
 		'y Before we meet your other classmates, lets take a look at some useful information!',
 		'hide character y elephant at right with fadeOut',

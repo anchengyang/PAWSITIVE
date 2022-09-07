@@ -73,7 +73,7 @@ monogatari.script ({
   'Advice': [
     'show image ear with fadeIn',
     'mc Here are some helpful avenues if you are lonely and need a listening ear.',
-    'mc Even though I may not fully comprehend the grief you are goin through, Do know that you are not alone as Kitty and I are always here for you.',
+    'mc Even though I may not fully comprehend the grief you are goin through, do know that you are not alone as Kitty and I are always here for you.',
     'mc Additionally, applications like Tinkle Friend and Wysa makes it easy to vent when you are uncomfortable talking with your friends.',
     'hide image ear with fadeOut',
     'mc If you need help, Principal Brown might be able to give some support both financially and emotionally.',
