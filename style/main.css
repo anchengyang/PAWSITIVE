@@ -75,16 +75,22 @@ button:hover {
 }
 
 /* Main Menu Buttons Styling */
-[data-screen="main"] button {
+[data-screen="main"] button:nth-child(4) {
 	/* margin-bottom: 960px; */
+	display: none;
 
 }
+load-screen, settings-screen, save-screen {
+	background: snow;
+}
+
 main-menu.animated {
 	width: 100%;
 	display: block;
 	flex-direction: column;
 	align-items: center;
-	padding: 0 0 100px;
+	padding: 0 0 30vh;
+	margin-right: 50px;
 }
 
 /**
