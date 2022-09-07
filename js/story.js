@@ -117,6 +117,8 @@ monogatari.script ({
 		'hide character k sadcat at right with fadeOut',
 		'show character k happycat at right with fadeIn',
 		'y Well done! You have successfully provided psychological first aid to the first person you met in Pawsitive!',
+		'hide character k happycat at right with fadeOut',
+		'hide character mc hamster at left with fadeOut',
 		'show image 4steps with fadeIn',
 		'y From this, we have learnt to practice prepare, look, listen and link.',
 		'jump DogIntro'

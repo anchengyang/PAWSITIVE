@@ -95,7 +95,7 @@ monogatari.characters ({
 	},
 	'r': {
 		name: 'Russell',
-		color: '#FFFFFF',
+		color: '#7CFC00',
 		sprites: {
 			happydog: 'happydog.png',
 			saddog: 'saddog.png',
@@ -103,7 +103,7 @@ monogatari.characters ({
 	},
 	'k': {
 		name: 'Kitty',
-		color:'#FF8C00',
+		color:'#DE3163',
 		sprites: {
 			sadcat: 'sadcat2.png',
 			happycat: 'happycat.png'
