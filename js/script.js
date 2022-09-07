@@ -44,7 +44,7 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-
+	'bgm': 'bgm.mp3'
 });
 
 // Define the voice files used in the game.
@@ -72,7 +72,8 @@ monogatari.assets ('images', {
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
 	'scene3': 'scene3.jpg',
-	'scene5': 'scene5.png'
+	'scene5': 'scene5.png',
+	'hall': 'hall.jpg',
 });
 
 
@@ -80,7 +81,10 @@ monogatari.assets ('scenes', {
 monogatari.characters ({
 	'y': {
 		name: 'Principal Brown',
-		color: '#5bcaff'
+		color: '#5bcaff',
+		sprites: {
+			elephant: "elephant.png",
+		}
 	},
 	'mc': {
 		name: '{{player.name}}',
@@ -93,7 +97,8 @@ monogatari.characters ({
 		name: 'Russell',
 		color: '#FFFFFF',
 		sprites: {
-			happydog: 'happydog.png'
+			happydog: 'happydog.png',
+			saddog: 'saddog.png',
 		}
 	},
 	'k': {
@@ -109,6 +114,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
+		'play music bgm with loop',
 		'show scene scene3 with fadeIn',
 		'show notification Welcome',
 		{
@@ -135,12 +141,13 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},
-		'show character mc hamster at center with fadeIn',
+		'show character mc hamster at left with fadeIn',
+		'show character y elephant at right with fadeIn',
 		'y Hi {{player.name}}! Welcome to Pawsitive, a school for animals!', 
 		'y We hope you are excited to meet new people and make new friends.',
 		'show image guide with fadeIn',
 		'y Before we meet your other classmates, lets take a look at some useful information!',
-		
+		'hide character y elephant at right with fadeOut',
 		'show scene scene5 with fadeIn',
 		'show character mc hamster at left with fadeIn',
 		'y This will be your classroom. Meet your new classmate, Kitty the cat!',
