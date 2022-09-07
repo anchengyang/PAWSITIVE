@@ -68,7 +68,7 @@ monogatari.script ({
   'cFault': [{
     'Choice': {
       'NotFault': {
-        'Text': 'Its Not Your Fault.', 
+        'Text': 'Its not your fault.', 
         'Do': 'jump NotFault',
         'Class': 'button'
       },
@@ -119,7 +119,7 @@ monogatari.script ({
     'mc Even though I may not fully comprehend the grief you are goin through, do know that you are not alone as Kitty and I are always here for you.',
     'mc Additionally, applications like Tinkle Friend and Wysa makes it easy to vent when you are uncomfortable talking with your friends.',
     'hide image ear with fadeOut',
-    'mc If you need help, Principal Brown might be able to give some support both financially and emotionally.',
+    'mc If you need help, an adult like Principal Brown might be able to give some support both financially and emotionally.',
     'mc Come, lets go and find Principal Brown together!',
     'hide character mc hamster at left with fadeOut',
     'hide character r saddog at right with fadeOut',
