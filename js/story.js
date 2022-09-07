@@ -78,7 +78,7 @@ monogatari.script ({
 	'AdviceorAvoid': [
 		{
 			'Choice': {
-				'Dialog': 'mc How shall I reply him?',
+				'Dialog': 'mc How shall I reply her?',
 				'e': {
 					'Text': 'Chill, it is not that bad',
 					'Do': 'jump Notbad',
@@ -95,7 +95,7 @@ monogatari.script ({
 					'Class': 'button'
 				},
 				'a': {
-					'Text': 'Support him',
+					'Text': 'Support her',
 					'Do': 'jump Support',
 					'Class': 'button'
 				},
