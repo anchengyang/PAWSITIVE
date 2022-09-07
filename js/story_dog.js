@@ -85,7 +85,7 @@ monogatari.script ({
     'jump cFault',
   ], 
   'NotFault':[
-    'y No Russel you did not cause the death,',
+    'y No Russell, you did not cause the death,',
     'y and it isn\'t a punishment for anything that anyone did wrong.',
     'y also, he would be happy to hear that you appreciate and love him too.',
     'r Thank you for reassuring me,',
@@ -96,7 +96,7 @@ monogatari.script ({
     'y In certain situations that may be a comforting thing to say.',
     'y However different people of different cultures may have different rituals related to mourning.',
     'y Even within cultural and religious groups, beliefs and practices can vary widely.',
-    'y It is best not to assume Russel\'s views on mourning and death unless you know him well.',
+    'y It is best not to assume Russell\'s views on mourning and death unless you know him well.',
     'jump cCheerUp',
   ],
   'cGiveAdvice': [{
