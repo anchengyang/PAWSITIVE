@@ -2,7 +2,7 @@
 
 ## How to play our game:
 
-You can find our game at the following URL
+The following URL is a link to our website and contains a link to our game.
 
 https://anchengyang.github.io/PAWSITIVE/
 
@@ -43,4 +43,10 @@ The engine comes with a documentation and we had to edit the files in order to a
 The files edited were script.js and a new file called story.js. 
 
 We added our own background pictures, images and sprites into the assets folder.
+
+## Project Details:
+
+More information regarding our project can be found below
+
+https://docs.google.com/document/d/1-7HNVg0vU0X47DFanzZWFNItM1ZyVIrP6UbCVXGzJi8/edit#heading=h.67pxpcxut9ai
 
